@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "276351078678",
+    "project_id": "bunjang-74d25",
+    "storage_bucket": "bunjang-74d25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276351078678:android:606b1174608df1c740c037",
+        "android_client_info": {
+          "package_name": "com.example.lightningmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276351078678-72p8o94d4ap6qj0lh1rgp70momkg2mlc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9Ldu2J3Gz9qaN0z4cGvvOu11QBH-cPGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276351078678-72p8o94d4ap6qj0lh1rgp70momkg2mlc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

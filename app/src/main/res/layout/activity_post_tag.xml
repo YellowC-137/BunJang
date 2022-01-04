@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".src.btm_nav.post.postpages.PostTagActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="연관태그"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/chk"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/black_chk"
+            android:layout_margin="10dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linear_tag"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top"
+        app:layout_constraintEnd_toEndOf="parent">
+    <TextView
+        android:layout_gravity="top|end"
+        android:layout_marginStart="10dp"
+        android:id="@+id/shap"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="#"
+        android:textColor="@color/black"
+         />
+    <EditText
+        android:id="@+id/et"
+        android:background="@null"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:hint="태그를 입력해주세요(최대 5개)"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:autoSizeTextType="uniform"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/tv1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linear_tag"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="-태그는 띄어쓰기로 구분되며 최대 9자까지 입력할 수 있습니다."/>
+    <TextView
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/tv2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="-태그는 검색의 부가정보로 사용 되지만, 검색 결과 노출을 보장하지는 않습니다."/>
+    <TextView
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:id="@+id/tv3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="-검색 광고는 태그정보를 기준으로 노출됩니다."/>
+    <TextView
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/tv4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="-상품과 직접 관련이 없는 다른 상품명,브랜드,스팸성 \n키워드 등을 입력하면 노출이 중단되거나 상품이\n삭제될 수 있습니."/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

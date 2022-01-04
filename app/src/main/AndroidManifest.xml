@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lightningmarket">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".config.ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".src.Purchase.PurchaseActivity"></activity>
+        <activity android:name=".src.btm_nav.mypage.options.deliver.DeliveryActivity" />
+        <activity android:name=".src.btm_nav.mypage.options.OptionsActivity" />
+        <activity android:name=".src.btm_nav.mypage.setting.SettingActivity" />
+        <activity android:name=".src.Login.Sign.SignActivity" />
+        <activity android:name=".src.detail.DetailActivity" />
+        <activity android:name=".src.product.ProductActivity" />
+        <activity android:name=".src.btm_nav.post.postpages.PostOptionActivity" />
+        <activity android:name=".src.btm_nav.post.postpages.PostLocationActivity" />
+        <activity android:name=".src.btm_nav.post.postpages.PostDescriptActivity" />
+        <activity android:name=".src.btm_nav.post.postpages.PostTagActivity" />
+        <activity android:name=".src.btm_nav.post.postpages.PostCategoryActivity" />
+        <activity android:name=".src.CategoryActivity" />
+        <activity android:name=".src.Register.RegisterActivity" />
+        <activity android:name=".src.btm_nav.search.SearchActivity" />
+        <activity android:name=".src.btm_nav.post.PostActivity" />
+        <activity android:name=".src.Login.LoginActivity" />
+        <activity android:name=".src.MainActivity" />
+        <activity
+            android:name=".src.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

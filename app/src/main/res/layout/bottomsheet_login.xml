@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tv_btm_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="다른 방법으로 로그인"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_facebook"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_btm_login"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/login_facebook"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="페이스북으로 시작하기"
+        app:layout_constraintStart_toEndOf="@id/iv_facebook"
+        android:id="@+id/tv_facebook"
+        app:layout_constraintTop_toBottomOf="@id/tv_btm_login"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_facebook"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:id="@+id/iv_naver"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_facebook"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/login_naver"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="네이버로 시작하기"
+        app:layout_constraintStart_toEndOf="@id/iv_naver"
+        android:id="@+id/tv_naver"
+        app:layout_constraintTop_toBottomOf="@id/iv_facebook"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_naver"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:layout_marginBottom="30dp"
+        android:id="@+id/iv_phone"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_naver"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/login_phone"/>
+    <TextView
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="본인인증으로 시작하기"
+        app:layout_constraintStart_toEndOf="@id/iv_phone"
+        android:id="@+id/tv_phone"
+        app:layout_constraintTop_toBottomOf="@id/iv_naver"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_phone"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/iv_login"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/login_phone"/>
+    <TextView
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="이메일로 로그인하기"
+        app:layout_constraintStart_toEndOf="@id/iv_login"
+        android:id="@+id/tv_login"
+        app:layout_constraintTop_toBottomOf="@id/iv_phone"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_login"
+        android:layout_marginStart="10dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
